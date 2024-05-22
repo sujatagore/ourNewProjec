@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ourNewProjec';
+  skills : Array<string> = ["TS", "JS", "HTML", "Angular"];
 }

@@ -1,0 +1,22 @@
+<h2>Student Information</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+            <th>Contact</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of dataArr; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{data.fname}}</td>
+            <td>{{data.lname}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.contact}}</td>
+        </tr>
+    </tbody>
+</table>

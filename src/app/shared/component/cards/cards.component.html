@@ -1,0 +1,20 @@
+<h2>Cards</h2>
+
+<div class="row">
+    <div class="col-md-4" *ngFor="let card of cardsData">
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h3 class="title" data-toggle="tooltip" title="{{card.title}}">{{card.title}}</h3>
+            </div>
+            <div class="card-body">
+                <p class="mb-0">UserId : {{card.userId}}</p>
+                <p class="mb-0">Id : {{card.id}}</p>
+                <p class="mb-0 text-capitalize content">{{card.body}}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <button class="btn btn-outline-success">Edit</button>
+                <button class="btn btn-outline-danger">Delet</button>
+            </div>
+        </div>
+    </div>
+</div>
